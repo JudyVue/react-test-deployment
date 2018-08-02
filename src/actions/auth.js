@@ -2,7 +2,7 @@ import superagent from 'superagent';
 import * as routes from '../lib/routes';
 import { cookieDelete } from '../lib/utils';
 
-// TODO: token key name here
+// TODO: token key name here hasd
 const TOKEN_COOKIE_KEY = 'X-401d25-Token';
 
 // These are sync actions
