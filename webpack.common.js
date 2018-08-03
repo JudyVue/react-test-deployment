@@ -3,7 +3,6 @@
 require('dotenv').config();
 
 const { DefinePlugin } = require('webpack');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const webpackConfig = module.exports = {};

@@ -5,7 +5,5 @@ cache:
   directories:
     - ~/.npm
     - ~/.cache
-before_script:
-    - "npm run pretest"
 script:
   - $(npm bin)/cypress run --record
