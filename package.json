@@ -10,7 +10,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run --record --key",
+    "test": "cypress run --record --key CYPRESS_RECORD_KEY",
     "watch": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "lint": "eslint --fix **/*.js",
