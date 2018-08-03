@@ -12,8 +12,11 @@ app.get('*', (request, response) => {
   response.sendFile(`${__dirname}/build/index.html`);
 });
 
+<<<<<<< HEAD
 
 // Heroku will give us a port
+=======
+>>>>>>> master
 app.listen(process.env.PORT, () => {
   console.log('__SERVER_UP__', process.env.PORT);
 });
