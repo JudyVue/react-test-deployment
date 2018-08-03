@@ -19,11 +19,7 @@
     "start": "node index.js",
     "pretest": "npm run build && npm run start && wait-on http://localhost:8080",
     "posttest": "pkill -f http-server",
-<<<<<<< HEAD
-    "heroku-postbuild": "webpack --progress --config webpack.prod.js",
-=======
     "heroku-postbuild": "webpack --progress --config webpack.prod.js"
->>>>>>> master
   },
   "keywords": [],
   "author": "",
