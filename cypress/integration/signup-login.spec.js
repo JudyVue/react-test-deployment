@@ -46,10 +46,10 @@ describe('SIGNUP testing', () => {
         cy.url().should('include', '/dashboard');
         cy.get('h1').should('have.length', 1);
 
-        cy.clearCookies();
-        cy.visit('/login')
+        // cy.clearCookies();
+        // cy.visit('/login')
 
-        cy.url().should('include', '/login')
+        // cy.url().should('include', '/login')
 
         cy.get('input[name=username]').type(currentUser.username);
         cy.get('input[name=password]').type(currentUser.password);
