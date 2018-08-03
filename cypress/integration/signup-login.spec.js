@@ -43,10 +43,10 @@ describe('SIGNUP testing', () => {
 
     cy.get('form.auth-form').submit()
       .then(() => {
-        // cy.wait(500);
-        // cy.url().should('include', '/dashboard');
+        cy.url().should('include', '/dashboard');
         cy.get('h1').should('have.length', 1);
 
+        cy.clearCookies();
         cy.visit('/login')
 
         cy.url().should('include', '/login')
