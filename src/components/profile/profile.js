@@ -34,9 +34,6 @@ class Profile extends React.Component {
   componentDidMount() {
     // debugger;
     this.props.fetchProfile()
-      .then((response) => {
-        console.log(response, 'what is response');
-      })
       .catch(console.error);
 
   }

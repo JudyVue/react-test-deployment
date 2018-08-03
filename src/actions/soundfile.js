@@ -11,7 +11,6 @@ const createSound = sound => ({
 // async action creators
 export default fileDescriptor => (store) => {
   const { token } = store.getState();
-  console.log(fileDescriptor, 'what is this')
 
   // 'description' and 'picture' are properties automaticall given to us by the FileReader API
   return superagent.post(`${API_URL}${routes.SOUND_ROUTE}`)

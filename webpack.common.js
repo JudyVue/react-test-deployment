@@ -26,14 +26,6 @@ webpackConfig.plugins = [
   }),
 ];
 
-webpackConfig.optimization = {
-  minimizer: [
-    new UglifyJSPlugin({
-      cache: true,
-      parallel: true,
-    }),
-  ],
-};
 
 webpackConfig.module = {};
 
@@ -49,7 +41,7 @@ webpackConfig.module.rules = [
       loader: 'babel-loader',
       options: {
         presets: ['env', 'stage-0', 'react'],
-        plugins: ['transform-react-jsx-source', 'transform-object-rest-spread', 'transform-class-properties', 'transform-remove-console'],
+        plugins: ['transform-react-jsx-source', 'transform-object-rest-spread', 'transform-class-properties'],
         cacheDirectory: true,
       },
     },

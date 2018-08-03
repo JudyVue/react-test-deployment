@@ -9,7 +9,7 @@ describe('SIGNUP testing', () => {
     cy.fixture('test-user.json')
       .then((response) => {
         currentUser = response;
-        console.log(response, 'response')
+        // console.log(response, 'response')
 
         // here we are mocking our response to /api/signup
         if (isStubbed) {

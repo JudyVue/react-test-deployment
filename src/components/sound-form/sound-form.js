@@ -90,13 +90,9 @@ export default class SoundForm extends React.Component {
 
   handleChange = (event) => {
     const { type, value, files } = event.target; // notice how we now have a "files" property on event.target
-    console.log(files);
-  
-
     // if the input is a file input
     if (type === 'file') {
       const [file] = files;
-      console.log(file)
       fileToBase64String(file)
         .then((preview) => {
           this.setState({ 
