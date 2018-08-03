@@ -43,13 +43,13 @@ describe('SIGNUP testing', () => {
 
     cy.get('form.auth-form').submit()
       .then(() => {
+        cy.wait(500);
         cy.url().should('include', '/dashboard');
         cy.get('h1').should('have.length', 1);
 
         cy.visit('/login')
 
         cy.url().should('include', '/login')
-        cy.get('h1').should('have.length', 0);
 
         cy.get('input[name=username]').type(currentUser.username);
         cy.get('input[name=password]').type(currentUser.password);

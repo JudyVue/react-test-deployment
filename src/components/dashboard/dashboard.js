@@ -17,7 +17,6 @@ class Dashboard extends React.Component {
     const { createSound } = this.props;
     return (
       <div className="dashboard">
-        <h1>Hello from Dashboard</h1>
         <SoundForm onComplete={ createSound } />
       </div>
     );
