@@ -5,5 +5,3 @@ cache:
   directories:
     - ~/.npm
     - ~/.cache
-script:
-  - $(npm bin)/cypress run --record
