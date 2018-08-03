@@ -32,5 +32,6 @@
   "viewportHeight": 660,
   "viewportWidth": 1000,
   "waitForAnimations": true,
-  "watchForFileChanges": true
+  "watchForFileChanges": true,
+  "projectId": "wy82c8"
 }
