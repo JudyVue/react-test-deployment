@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-// a change
-=======
 // change
->>>>>>> master
 // don't validate yet
 // const validateProfile = (profile) => {
 //   if (!profile) {
