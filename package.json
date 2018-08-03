@@ -19,7 +19,7 @@
     "start": "node index.js",
     "pretest": "npm run build && npm run start && wait-on http://localhost:8080",
     "posttest": "pkill -f http-server",
-    "heroku-prebuild": "npm uninstall cypress",
+    "heroku-prebuild": "npm uninstall cypress && npm run build",
     "heroku-postbuild": "webpack --progress --config webpack.prod.js"
   },
   "keywords": [],
@@ -58,6 +58,7 @@
     "redux-devtools-extension": "^2.13.5",
     "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.7",
     "wait-on": "^2.1.0",
     "webpack-dev-server": "^3.1.4"
   },

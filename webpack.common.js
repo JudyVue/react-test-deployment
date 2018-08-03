@@ -3,6 +3,7 @@
 require('dotenv').config();
 
 const { DefinePlugin } = require('webpack');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const webpackConfig = module.exports = {};
@@ -24,6 +25,15 @@ webpackConfig.plugins = [
     GOOGLE_OAUTH_ID: JSON.stringify(process.env.GOOGLE_OAUTH_ID).trim(),
   }),
 ];
+
+webpackConfig.optimization = {
+  minimizer: [
+    new UglifyJSPlugin({
+      cache: true,
+      parallel: true,
+    }),
+  ],
+};
 
 webpackConfig.module = {};
 
