@@ -5,7 +5,5 @@ cache:
   directories:
     - ~/.npm
     - ~/.cache
-before_install:
-  - npm run c-istart
 script:
   - $(npm bin)/cypress run --record
